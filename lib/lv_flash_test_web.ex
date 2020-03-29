@@ -22,6 +22,7 @@ defmodule LvFlashTestWeb do
       use Phoenix.Controller, namespace: LvFlashTestWeb
 
       import Plug.Conn
+      import Phoenix.LiveView.Controller
       import LvFlashTestWeb.Gettext
       alias LvFlashTestWeb.Router.Helpers, as: Routes
     end
@@ -39,6 +40,7 @@ defmodule LvFlashTestWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
+      import Phoenix.LiveView.Helpers
       import LvFlashTestWeb.ErrorHelpers
       import LvFlashTestWeb.Gettext
       alias LvFlashTestWeb.Router.Helpers, as: Routes
@@ -50,6 +52,7 @@ defmodule LvFlashTestWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
